@@ -26,7 +26,7 @@ SNP subsets were selected based on FST values, followed by population classifica
 
 SNP subsets were selected using the mRMR feature selection method, followed by population classification using four different machine learning algorithms.
 
-## relf_machine-learning
+## relief_machine-learning
 
 ---
 
