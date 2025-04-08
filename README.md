@@ -1,4 +1,4 @@
-# Machine learning based on informational SNPS for population  for population assignment
+# Machine learning based on informational SNPS for population assignment
 
 ---
 
