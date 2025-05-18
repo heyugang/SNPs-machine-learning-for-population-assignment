@@ -1,22 +1,18 @@
 # Machine learning based on informational SNPS for population assignment
 
----
 
 # **1. Introduction**
 
----
 
 In this study, we aim to develop an informative SNP panel for population assignment using WGS data, by evaluating three SNP selection methods (FST, mRMR, and Relief-F) combined with four popular machine learning classifiers (KNN, RF, SVM, and NB) . The goal is to determine the most effective approach for population assignment, particularly in cases of low genetic differentiation among populations.
 
 # 2. Workflow
 
----
 
 ![workflow.png](workflow.png)
 
 # **3. The main contents**
 
----
 
 The main components include population genetic analysis, genotype imputation using Beagle, SNP selection and population assignment, as well as the development of a SNP panel for accurate population discrimination.
 
@@ -28,19 +24,16 @@ Principal component analysis (PCA) and pairwise FST value calculation were perfo
 
 ## Genotype imputation using Beagle
 
----
 
 Missing genotypes were imputed using Beagle software with the parameters “iterations=50” and “window=50”.
 
 ## **SNP selection and population assignment**
 
----
 
 To identify the most effective SNP selection methods and the highly breed-informative markers, we employed both a genetic approach (the population differentiation index FST) and two machine learning algorithms (Minimum Redundancy Maximum Relevance (mRMR) and Relief-F). For each SNP set obtained from the three selection methods, we applied four widely used machine learning classifiers—Random Forest (RF), Support Vector Machine (SVM), K-Nearest Neighbor (KNN), and Naive Bayes (NB)—to perform population assignment.
 
 ### **Fst_machine-learning**
 
----
 
 SNP subsets were selected based on FST values, followed by population classification using four different machine learning methods.
 
@@ -52,23 +45,19 @@ SNP subsets were selected using the mRMR feature selection method, followed by p
 
 ### **Relief_machine-learning**
 
----
 
 SNP subsets were selected using the Relief feature selection method, followed by population classification using four different machine learning algorithm.
 
 ## The development of a SNP panel
 
----
 
 We identified the SNP set with the highest classification accuracy and the fewest selected SNPs by combining the optimal SNP selection method with the best-performing machine learning classifier.
 
 # 4.Description of the script files.
 
----
 
 ## **Population genetics analysis**
 
----
 
 **`population_genetic_analysis.sh`**
 
@@ -76,7 +65,6 @@ PCA, Admixture, and Neighbor-Joining (NJ) tree analyses were conducted under the
 
 ## Genotype imputation using Beagle
 
----
 
 **`Imputation_Beagle.sh`**
 
@@ -84,7 +72,6 @@ Missing genotypes were imputed using Beagle software.
 
 ## **SNP selection and population assignment**
 
----
 
 ### Division of training and testing sets
 
@@ -120,7 +107,6 @@ The SNP datasets selected using the Relief method were employed for breed assign
 
 ## The development of a SNP panel
 
----
 
 **`01_SNPpanel.prepare.R`**
 
@@ -132,7 +118,6 @@ Based on the intersected SNP dataset, breed classification was performed using t
 
 # 5. **Data availability**
 
----
 
 The VCF file derived from whole-genome sequencing for this study can be accessed via the link provided below.
 
