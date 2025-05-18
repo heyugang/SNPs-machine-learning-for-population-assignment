@@ -18,7 +18,6 @@ The main components include population genetic analysis, genotype imputation usi
 
 ## **Population genetics analysis**
 
----
 
 Principal component analysis (PCA) and pairwise FST value calculation were performed using Plink. ADMIXTURE v1.3 software was used to infer the proportion of ancestry in the tested population with K values ranging from 2 to 6. For phylogenetic analysis, the NJ tree was constructed based on IBD distance and visualized using the online iTOL tool.
 
@@ -39,7 +38,6 @@ SNP subsets were selected based on FST values, followed by population classifica
 
 ### **mRMR_machine-learning**
 
----
 
 SNP subsets were selected using the mRMR feature selection method, followed by population classification using four different machine learning algorithms.
 
